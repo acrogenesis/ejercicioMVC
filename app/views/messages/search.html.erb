@@ -1,0 +1,10 @@
+<%= form_tag messages_path, :method => 'get' do %>
+  <p>
+    Nombre del usuario
+    <%= search_field_tag :search, params[:search] %>
+    <br/>
+    <%= submit_tag "Search", :name => nil %>
+  </p>
+<% end %>
+
+<%= link_to 'Back', root_path %>
